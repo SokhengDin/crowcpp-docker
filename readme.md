@@ -10,7 +10,7 @@ This project provides a Docker-based development environment for building C++ we
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/crowcpp-dev.git
+   git clone https://github.com/SokhengDin/crowcpp-docker.git
    cd crowcpp-dev
    ```
 
