@@ -52,4 +52,12 @@ ENV CXX=g++
 
 EXPOSE 8080
 
-CMD ["/bin/bash"]
+# Copy CMakeLists.txt from the current directory
+COPY ./CMakeLists.txt /usr/src/app/CMakeLists.txt
+
+# Copy the entrypoint script
+COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
+
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
