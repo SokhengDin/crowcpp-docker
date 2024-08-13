@@ -24,15 +24,4 @@ This project provides a Docker-based development environment for building C++ we
    docker run -it -v $(pwd)/src:/usr/src/app/src -p 8080:8080 crowcpp-dev-slim
    ```
 
-4. Inside the container, navigate to the source directory and compile your application:
-   ```
-   cd /usr/src/app/src
-   g++ -std=c++14 -O3 main.cpp -o api -I/usr/local/include -L/usr/local/lib -lboost_system -lpthread -lssl -lcrypto
-   ```
-
-5. Run your application:
-   ```
-   ./api
-   ```
-
 Your Crow application should now be running and accessible at `http://localhost:8080`.

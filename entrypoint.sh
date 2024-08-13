@@ -10,7 +10,7 @@ cmake ..
 make
 
 if [ $? -eq 0 ]; then
-    ./api
+    ./crowcpp_api
 else
     echo "Build failed. Please check your code."
     /bin/bash
